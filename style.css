@@ -1,0 +1,33 @@
+body {
+  background: lightgrey;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+  background: white;
+}
+
+header {
+  background: grey;
+  color: white;
+
+  text-align: center;
+}
+
+main {
+  padding: 15px;
+}
+
+p {
+  margin: 10px 0 10px 0;
+}
