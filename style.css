@@ -1,3 +1,15 @@
+/* Add padding to the top of the main div so it's not cut off by the navbar */
 main {
   margin-top: 60px;
+}
+
+.about-image {
+  float: left;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .about-image {
+    width: 100%;
+  }
 }
