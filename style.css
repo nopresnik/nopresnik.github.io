@@ -8,6 +8,7 @@ main {
   margin-right: 1rem;
 }
 
+/* Media query for screens sizes less than 640px wide */
 @media screen and (max-width: 640px) {
   .about-image {
     width: 100%;
