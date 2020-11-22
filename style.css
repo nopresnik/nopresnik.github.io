@@ -8,6 +8,38 @@ main {
   margin-right: 1rem;
 }
 
+.page-title {
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card {
+  position: relative;
+
+  margin: 15px 0px 15px 0px;
+}
+
+.portfolio-card img {
+  width: 100%;
+}
+
+.portfolio-card .portfolio-text {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio-card .portfolio-text h5 {
+  margin: 0;
+  padding: ;
+}
+
 /* Media query for screens sizes less than 640px wide */
 @media screen and (max-width: 640px) {
   .about-image {
