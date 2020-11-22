@@ -4,7 +4,6 @@ main {
 }
 
 .about-image {
-  float: left;
   margin-right: 1rem;
 }
 
@@ -37,7 +36,7 @@ main {
 
 .portfolio-card .portfolio-text h5 {
   margin: 0;
-  padding: ;
+  padding: 0;
 }
 
 /* Media query for screens sizes less than 640px wide */
