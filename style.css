@@ -5,6 +5,15 @@ body {
   color: #59aaa5;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 160px;
+}
+
 /* Add a small margin to the right of the image on the about page */
 .about-image {
   margin-right: 1rem;
@@ -52,8 +61,8 @@ body {
   align-items: center;
 }
 
-/* Make the about image take up 100% of the width to force text under it */
 @media screen and (max-width: 640px) {
+  /* Make the about image take up 100% of the width to force text under it */
   .about-image {
     width: 100%;
   }
@@ -74,6 +83,22 @@ body {
   .nav-container {
     display: block !important;
   }
+}
+
+/* Footer that sticks to the bottom of page */
+.footer {
+  background: #666666;
+  color: #cccccc;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  border-top: 10px solid #59aaa5;
+
+  display: flex;
+  align-items: center;
 }
 
 /* Custom bootstrap theming overrides. */
