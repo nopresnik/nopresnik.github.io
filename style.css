@@ -1,6 +1,7 @@
 html,
 body {
   background: #eeeeee;
+  color: #59aaa5;
 }
 
 /* Add padding to the top of the main div so it's not cut off by the navbar */
