@@ -1,18 +1,16 @@
+/* Set the document background color and font colors */
 html,
 body {
   background: #eeeeee;
   color: #59aaa5;
 }
 
-/* Add padding to the top of the main div so it's not cut off by the navbar */
-main {
-  margin-top: 10px;
-}
-
+/* Add a small margin to the right of the image on the about page */
 .about-image {
   margin-right: 1rem;
 }
 
+/* Custom element which makes a heading tag full width and adds an underline */
 .page-title {
   width: 100%;
   padding-bottom: 15px;
@@ -20,16 +18,18 @@ main {
   border-bottom: 2px solid #dddddd;
 }
 
+/* Adds a margin to the top and bottom of each portfolio item */
 .portfolio-card {
   position: relative;
-
   margin: 15px 0px 15px 0px;
 }
 
+/* Makes the portfolio image take up 100% of the card's width */
 .portfolio-card img {
   width: 100%;
 }
 
+/* Misc. portfolio attributes */
 .portfolio-card .portfolio-text {
   position: absolute;
   bottom: 10%;
@@ -40,24 +40,46 @@ main {
   text-align: center;
 }
 
+/* Remove the margin and padding on portifolio card headings. */
 .portfolio-card .portfolio-text h5 {
   margin: 0;
   padding: 0;
 }
 
-/* Media query for screens sizes less than 640px wide */
+/* Custom nav container to centre the links vertically on larger screens */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Make the about image take up 100% of the width to force text under it */
 @media screen and (max-width: 640px) {
   .about-image {
     width: 100%;
   }
 }
 
-/* Custom bootstrap theming overrides */
+@media screen and (max-width: 767px) {
+  /* Make the navbar brand take up the fill width on small screens. */
+  .navbar-brand {
+    width: 100%;
+  }
+
+  /* Use flexbox to align the nav list to centre on small screens. */
+  .navbar-nav {
+    justify-content: center !important;
+  }
+
+  /* This somehow makes the links centred on small screens. */
+  .nav-container {
+    display: block !important;
+  }
+}
+
+/* Custom bootstrap theming overrides. */
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
-  display: flex;
-  align-items: center;
 }
 
 .navbar-brand {
@@ -67,9 +89,11 @@ main {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 10px;
+  margin: 0;
   font-size: 36px;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 h1 {
@@ -78,6 +102,6 @@ h1 {
   font-weight: bold;
 }
 
-.no-left-padding {
-  padding-left: 0;
+.navbar-nav {
+  justify-content: flex-end;
 }
