@@ -31,6 +31,8 @@ body {
 .portfolio-card {
   position: relative;
   margin: 15px 0px 15px 0px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
 }
 
 /* Makes the portfolio image take up 100% of the card's width */
