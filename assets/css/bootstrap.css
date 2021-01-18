@@ -10801,4 +10801,58 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav {
+  background: #6c757d;
+}
+
+.nav-links {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-links a {
+  color: #969696;
+}
+
+.nav-links .active {
+  color: white;
+}
+
+#landing {
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+}
+
+.social-links {
+  font-size: 48px;
+}
+
+.portfolio-item {
+  border-radius: 0.25rem;
+  border: 1px solid #f8f9fa;
+}
+
+.portfolio-item img {
+  height: 250px;
+  width: 400px;
+}
+
+.portfolio-item .item-content {
+  margin: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 /*# sourceMappingURL=bootstrap.css.map */
