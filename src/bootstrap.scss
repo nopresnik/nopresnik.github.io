@@ -2,7 +2,7 @@ $body-bg: #fff;
 $body-color: #111;
 $font-family-base: century-gothic, sans-serif;
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 * {
   margin: 0;
@@ -32,7 +32,7 @@ html {
 }
 
 #landing {
-  background-image: url(../img/cover.jpg);
+  background-image: url(./img/cover.jpg);
   background-size: cover;
 }
 
@@ -53,4 +53,12 @@ html {
     margin: 1rem;
     flex-grow: 1;
   }
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > section {
+  position: absolute;
 }
