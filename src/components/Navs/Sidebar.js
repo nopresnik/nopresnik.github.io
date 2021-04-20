@@ -1,18 +1,15 @@
 import { NavLink } from "react-router-dom";
 
-const MobileNav = () => (
-  <div className="row nav fixed-top d-md-none">
-    <div className="col-12">
-      <ul className="nav-links d-flex justify-content-around align-items-center mt-2 text-uppercase">
-        <li>
-          <img
-            src="/assets/img/profile.jpeg"
-            className="rounded-circle img-fluid p-2"
-            alt=""
-            style={{ maxWwidth: "72px" }}
-          />
-        </li>
-
+const Sidebar = () => (
+  <div className="col-md-2 d-none d-md-block px-0 position-fixed">
+    <div className="nav vh-100 d-flex flex-column justify-content-center align-items-center">
+      <img
+        src="./assets/img/profile.jpeg"
+        className="rounded-circle img-fluid p-2"
+        alt=""
+        style={{ maxWidth: "75%" }}
+      />
+      <ul className="nav-links mt-2 text-uppercase">
         <li>
           <NavLink exact={true} activeClassName="active" to="/">
             Home
@@ -33,4 +30,4 @@ const MobileNav = () => (
   </div>
 );
 
-export default MobileNav;
+export default Sidebar;
