@@ -32,7 +32,7 @@ html {
 }
 
 #landing {
-  background-image: url(../img/cover.jpg);
+  background-image: url(./img/cover.jpg);
   background-size: cover;
 }
 
@@ -59,6 +59,6 @@ html {
   position: relative;
 }
 
-.switch-wrapper > div {
+.switch-wrapper > section {
   position: absolute;
 }
