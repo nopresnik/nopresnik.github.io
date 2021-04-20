@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const MobileNav = () => (
   <div className="row nav fixed-top d-md-none">
     <div className="col-12">
@@ -10,16 +12,21 @@ const MobileNav = () => (
             style={{ maxWwidth: "72px" }}
           />
         </li>
+
         <li>
-          <a href="/" className="active">
+          <NavLink exact={true} activeClassName="active" to="/">
             Home
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a href="/portfolio">My Work</a>
+          <NavLink activeClassName="active" to="/portfolio">
+            My Work
+          </NavLink>
         </li>
         <li>
-          <a href="/contact">Contact Me</a>
+          <NavLink activeClassName="active" to="/contact">
+            Contact Me
+          </NavLink>
         </li>
       </ul>
     </div>
